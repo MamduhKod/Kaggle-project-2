@@ -1,8 +1,6 @@
 import os
 import sys
 
-sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
-
 # from src.features import feature_engineering, outliers_and_spread, save_data
 from src.config import (
     RAW_DATA_PATH,
@@ -19,6 +17,8 @@ from src.modeling.train_predict import (
     predict_test,
     save_trained_model,
 )
+
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
 
 def main():
